@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Alzys Global - A CLOSER WORLD THROUGH GLOBAL TRADE</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Alzys Global Pte Ltd., is a trading company registered in Singapore that started its operations in 2007 with the intention of trading in steel products ">
+    <meta name="keywords" content="Singapore,steel products,trading,steel trading">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Alzys Global - We are leading commodity trading firm and we bring the world closer through better global trade. ">
+    <!-- <meta name="twitter:creator" content="@@DrTusharHegdeSmileWithBraces"> -->
+    <meta name="twitter:description" content="Alzys Global Pte Ltd., is a trading company registered in Singapore that started its operations in 2007 with the intention of trading in steel products">
+    <meta name="twitter:image:src" content="http://alzys.sg/~/Assets/Clients/images/alzys-twitter.jpg">
+    <!-- Facebook -->
+    <meta property="og:title" content="Alzys Global - We are leading commodity trading firm and we bring the world closer through better global trade. " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://alzys.sg/" />
+    <meta property="og:description" content="Alzys Global Pte Ltd., is a trading company registered in Singapore that started its operations in 2007 with the intention of trading in steel products" />
+    <meta property="og:site_name" content="Alzys Global" />
+    <meta property="og:image" content="/~/Assets/Clients/images/alzys-facebook.jpg" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Alzys Global - We are leading commodity trading firm and we bring the world closer through better global trade. ">
+    <meta itemprop="image" content="/~/Assets/Clients/images/alzys-facebook.jpg">
+    <meta itemprop="description" content="Alzys Global Pte Ltd., is a trading company registered in Singapore that started its operations in 2007 with the intention of trading in steel products" />
+    <link rel="shortcut icon" href="/~/Assets/Clients/images/favicon.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/Assets/Clients/css/main.min.css">
+</head>
+<body data-menu="closed">
+    @Html.Partial("MainMenu")
+@RenderBody()
+
+@Html.Partial("Footer")
+
+    <!-- JS -->
+    <script src="~/Assets/Clients/js/main.min.js"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-126650170-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fancybox-media').fancybox({
+            openEffect: 'none',
+            closeEffect: 'none',
+            helpers: {
+                media: {}
+            }
+        });
+
+        $('.get-in-touch-send').click(function () {
+            //alert('hi');return false;
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (name == "") {
+                $('#msgSend').html('<p style="color:red;">Enter Name.</p>');
+                return false;
+            }
+
+            if (email == "") {
+                $('#msgSend').html('<p style="color:red;">Enter Email Id.</p>');
+                return false;
+            }
+
+            if (message == "") {
+                $('#msgSend').html('<p style="color:red;">Enter Message.</p>');
+                return false;
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: 'form/assets/php/form-process.php',
+                data: "name=" + name + "&email=" + email + "&message=" + message,
+                success: function (res) {
+                    if (res == "success") {
+                        $('#msgSend').html("<p style='color:green;'>Email Sent Successfully.</p>");
+                        return false;
+                    }
+                    else {
+                        $('#msgSend').html("<p style='color:red;'>Error in sending email.</p>");
+                        return false;
+                    }
+                }
+            });
+
+        });
+    });
+</script>

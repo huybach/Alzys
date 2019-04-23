@@ -1,0 +1,265 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="main-wrapper contact-us">
+    <div class="title-image-wrapper position-relative">
+        <img class="w-100" src="~/Assets/Clients/images/contact-us.jpg" alt="Contact Us">
+        <h1>CONTACT US</h1>
+    </div>
+    <header class="custom-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="float-left left-section">
+                        <a href="#" class="menu-icon float-left">
+                            <img src="~/Assets/Clients/images/menu-icon.svg" alt="menu">
+                        </a>
+                        <ul class="custom-navbar float-left">
+                            <li>
+                                <a class="hash-link" href="#careers">CAREERS</a>
+                            </li>
+                            <li>
+                                <a class="hash-link" href="#opportunities">OPPORTUNITIES</a>
+                            </li>
+                            <!-- <li>
+                                <a class="hash-link" href="#suppliers">SUPPLIERS</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="site-logo float-right">
+                        <a href="/">
+                            <img src="~/Assets/Clients/images/logo.svg" alt="Alzys Global">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section-why-work-for-us">
+        <div class="container section why-work-for-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow fadeInUp">
+                        <h1>WHY WORK <span class="brand-color">FOR US</span></h1>
+                    </div>
+                    <div class="col-12 col-md-5 transnational-company wow fadeInUp">
+                        <h4 class="brand-color">WE ARE A TRANSNATIONAL COMPANY THAT THINKS LIKE AN ENTREPRENEUR.</h4>
+                        <p class="font-20">Our growth has resulted from a lean organization and flexible business model. We reward people who show initiative and creativity, and who demonstrate the energy to continually drive business forward. Despite our presence in different countries, we are agile enough to make quick decisions and act on opportunities when they arise.</p>
+                    </div>
+                    <div class="col-12 col-md-1">
+                    </div>
+                    <div class="col-12 col-md-5 learning-development wow fadeInUp">
+                        <h4 class="brand-color">LEARNING & DEVELOPMENT</h4>
+                        <p class="font-20">The knowledge we hold across our company, in our platforms, industrial assets and regions, is highly respected industry-wide. Our experts manage risks that can impact a product from source of origin to destination. Joining our business means becoming part of a team that skillfully coordinates every activity to make sure products get to where they are needed most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-accolades-citations">
+        <div class="container section accolades-citations">
+            <div class="vector-image">
+                <img src="~/Assets/Clients/images/why-work-for-us.png" alt="Why work for us">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow fadeInUp">
+                        <h1>ACCOLADES &<br> <span class="brand-color">CITATIONS</span></h1>
+                    </div>
+                    <div class="col-4 col-md-4 ribbon ribbon-1 wow fadeInUp">
+                        <h4 class="year">2011</h4>
+                        <p class="font-20">Global Trader Programme (GTP) Certificate</p>
+                    </div>
+                    <div class="col-4 col-md-4 ribbon ribbon-2 wow fadeInUp">
+                        <h4 class="year">2014</h4>
+                        <p class="font-20">Global Trader Programme (GTP) Certificate</p>
+                    </div>
+                    <div class="col-4 col-md-4 ribbon ribbon-3 wow fadeInUp">
+                        <h4 class="year">2015</h4>
+                        <p class="font-20">HRD Employer of Choice <span>Singapore Bronze winner in the &lt; 100 employees category</span></p>
+                    </div>
+                    <div class="col-4 col-md-4 ribbon ribbon-1 wow fadeInUp">
+                        <h4 class="year">2016</h4>
+                        <p class="font-20">HRD Employer of Choice <span>- Work Culture</span></p>
+                    </div>
+                    <div class="col-4 col-md-4 ribbon ribbon-2 wow fadeInUp">
+                        <h4 class="year">2016</h4>
+                        <p class="font-20">HRD Employer of Choice <span>- Access to Technology</span></p>
+                    </div>
+                    <div class="col-4 col-md-4 ribbon ribbon-3 wow fadeInUp">
+                        <h4 class="year">2018</h4>
+                        <p class="font-20">Emerging 2018 - Singapore 1000 Award</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-professional-openings">
+        <div id="careers" class="container section professional-openings">
+            <form class="professional-openings" id="professional-openings" method="post" enctype="multipart/form-data" action="#">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 wow fadeInUp">
+                            <h2>PROFESSIONAL<br> <span class="brand-color">OPENINGS</span></h2>
+                        </div>
+                        <select name="position" id="company-position" class="wow fadeInUp company-position">
+                            <option value="MANAGER, INTERNATIONAL MARKETING">MANAGER, INTERNATIONAL MARKETING</option>
+                            <option value="DEPARTMENT HEAD">DEPARTMENT HEAD</option>
+                            <option value="MARKETING">MARKETING</option>
+                        </select>
+                        <div class="col-12 wow fadeInUp">
+                            <input type="text" name="name" class="name textfield" value="" placeholder="NAME" class="textfield" required>
+                        </div>
+                        <div class="col-12 wow fadeInUp">
+                            <input type="text" name="experience" class="experience textfield" value="" placeholder="EXPERIENCE/QUALIFICATION" class="textfield" required>
+                        </div>
+                        <div class="col-6 wow fadeInUp">
+                            <input type="email" name="email" class="email textfield" value="" placeholder="EMAIL" class="textfield" required>
+                        </div>
+                        <div class="col-6 wow fadeInUp">
+                            <input type="file" name="uploadCV" class="uploadCV textfield" id="uploadCV" class="textfield" placeholder="UPLOAD CV" required>
+                        </div>
+                        <div class="col-12 wow fadeInUp">
+                            <textarea class="textfield" name="message" class="message textfield" placeholder="MESSAGE" required></textarea>
+                        </div>
+                        <div class="col-12 wow fadeInUp">
+                            <div class="button-container">
+                                <input type="button" name="apply" value="APPLY" class="button-border professional-openings-send">
+                            </div>
+                        </div>
+                        <div id="msgapply" class="col-12 h3 text-center"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="opportunities" class="section opportunities">
+        <div class="opportunities-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 wow fadeInUp">
+                        <h2>OPPORTUNITIES</h2>
+                        <span class="suppliers-customers">SUPPLIERS &amp; CUSTOMERS</span>
+                    </div>
+                </div>
+            </div>.
+        </div>
+        <div class="container details wow fadeInUp">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="font-20">We believe in nurturing a strong vendor base with organizations having the experience, knowledge and expertise in developing superior quality products. Our strategic vendor selection allows us to source and offer the best assortment of products, assuring finest quality supply at a very reasonable price.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="font-20">Further, we aim to build a strong grid of reputed suppliers and foster an enduring partnership with them to serve clients better and stay ahead of the curve. We therefore welcome all suppliers to be a part of our extended family, and help us cater to needs of clients with the best possible solution.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container opportunities-form wow fadeInUp">
+            <div class="row">
+                <form id="form-suppliers-customers" method="post" action="#" style="width: 100%">
+                    <div class="col-12">
+                        <input type="text" id="company-name" name="company-name" value="" placeholder="COMPANY NAME" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="contact-name" name="contact-name" value="" placeholder="CONTACT NAME" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="contact-details" name="contact-details" value="" placeholder="CONTACT DETAIL" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="contact-city-country" name="contact-city-country" value="" placeholder="CITY &amp; COUNTRY" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="contact-expertise" name="contact-expertise" value="" placeholder="AREA OF EXPERTISE" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="contact-references" name="contact-references" value="" placeholder="REFERENCES / CLIENTELE" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <input type="text" id="contact-business-together" name="contact-business-together" value="" placeholder="HOW CAN WE DO BUSINESS TOGETHER?" class="textfield" required>
+                    </div>
+                    <div class="col-12">
+                        <div class="button-container">
+                            <input type="button" name="submit" value="SUBMIT" class="button-border opportunities-send">
+                        </div>
+                    </div>
+                    <div id="msgSubmit" class="col-12 h3 text-center"></div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="get-in-touch" class="section section-get-in-touch">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-6 address address-half wow fadeInUp">
+                    <h2>GET IN <span>TOUCH</span></h2>
+                    <p>CORPORATE OFFICE</p>
+                    <!-- <p style="margin: 0;">Alzys Global Pte Ltd.</p> -->
+                    <p class="font-20 get-in-touch-address">
+                        Alzys Global Pte Ltd.<br>112 Robinson Road, #13-03,<br>
+                        Singapore 068 902<br>
+                        T : +65 6491-1354<br>
+                        Email : <a href="mailto:info@alzys.sg">info@alzys.sg</a><br>
+                    </p>
+                </div>
+                <div class="col-6 col-sm-6 wow  form-half fadeInUp">
+                    <form id="get-in-touch" class="get-in-touch-form" method="post" action="#">
+                        <div class="row">
+                            <div class="col-12 col-sm-12">
+                                <input type="text" id="name" name="name" placeholder="NAME" class="textfield" required>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <input type="email" id="email" name="email" placeholder="EMAIL" class="textfield" required>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <textarea id="message" name="message" placeholder="MESSAGE" class="textfield textarea" required></textarea>
+                            </div>
+                            <div class="col-12 col-sm-12 button-container">
+                                <input type="button" name="send" value="SEND" class="button-border homepage-send get-in-touch-send">
+                            </div>
+                            <div id="msgSend" class="col-12 h3 text-center"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section container corporate-addresses wow fadeInUp">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h4>INDIA OFFICE</h4>
+                <p class="font-20 company-name"><strong>Alzys Global Pte Ltd.</strong></p>
+                <p class="font-20">
+                    Metalex Commodities Pvt. Ltd. <br>
+                    702, 7th Floor, Hubtown Solaris,<br>
+                    N.S.Phadke Marg, Andheri East,
+                    <br>Mumbai - 400 069.<br>
+                    T : +91 22 2683 0454
+                </p>
+            </div>
+            <div class="col-12 col-md-3">
+                <h4>PERU OFFICE</h4>
+                <p class="font-20 company-name"><strong>Alzys Global Pte Ltd.</strong></p>
+                <p class="font-20">
+                    Jr. Paramonga 311/315,<br>
+                    Ofc. 602, Santiago de Surco, <br>
+                    Lima-33, Peru<br>
+                    T : +51 1637 3665
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h4>CHINA OFFICE</h4>
+                <p class="font-20 company-name"><strong>Alzys Global Pte Ltd.</strong></p>
+                <p class="font-20">
+                    Simon Lihaitao,<br>
+                    M : +86 1381 728 6782<br>
+                    +86 1360 148 1547
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
